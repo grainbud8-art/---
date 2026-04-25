@@ -3,7 +3,7 @@ import { ICONS } from './constants';
 
 export function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-slate-100 shadow-soft h-20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-emerald-50 shadow-soft h-20">
       <div className="flex justify-between items-center w-full px-6 h-full max-w-7xl mx-auto">
         <button 
           aria-label="Menu" 
@@ -66,12 +66,12 @@ export function ReminderCard({ icon, title, subtitle, time }: { icon: keyof type
   const Icon = ICONS[icon];
   return (
     <div className="bg-white p-6 rounded-card shadow-soft flex items-center gap-6 min-h-[100px]">
-      <div className="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center shrink-0">
-        <Icon size={32} className="text-on-surface" />
+      <div className="w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+        <Icon size={32} className="text-primary" />
       </div>
       <div className="flex-1">
         <h3 className="text-[18px] font-bold text-on-surface">{title}</h3>
-        <p className="text-[18px] text-on-surface-variant">{subtitle}</p>
+        <p className="text-[18px] text-on-surface-variant/70">{subtitle}</p>
       </div>
       <span className="text-2xl text-primary font-black">{time}</span>
     </div>
