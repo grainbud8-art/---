@@ -1,0 +1,9 @@
+{
+  "name": "LupusCare",
+  "description": "A high-accessibility healthcare app for senior wellness and lupus management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors from Vitality Design System */
+  --color-primary: #006b5f;
+  --color-primary-container: #00a896;
+  --color-on-primary: #ffffff;
+  --color-secondary: #006876;
+  --color-secondary-container: #92edff;
+  --color-tertiary: #5a5f60;
+  --color-tertiary-fixed: #dee3e3;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-background: #fcf9f8;
+  --color-surface: #ffffff;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #3c4946;
+  
+  /* Typography */
+  --font-inter: "Inter", sans-serif;
+  
+  /* Radii */
+  --radius-card: 1.5rem;
+  
+  /* Spacing replacements */
+  --spacing-touch-target: 60px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-inter antialiased font-medium;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.shadow-soft {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.shadow-nav {
+  box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+}
